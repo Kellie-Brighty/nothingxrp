@@ -3,30 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="$NOTHING was launched as a test for degens who just can’t stop aping.
-      "
-    />
-
+    <meta name="description" content="Probably Nothing - A crypto experiment" />
+    <meta name="keywords" content="Crypto, Nothing, XRP" />
     <meta name="theme-color" content="#FF4D4D" />
+
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="manifest" href="site.webmanifest" />
-    <meta name="theme-color" content="#FF4D4D" />
     <title>Probably Nothing</title>
 
     <!-- Preload critical assets -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" href="styles.css" as="style" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css" />
@@ -38,15 +30,11 @@
       href="https://fonts.googleapis.com/css2?family=Slackey&display=swap"
       rel="stylesheet"
     />
-    <link rel="preload" href="pfp2.png" as="image" />
-    <link rel="preload" href="header2.png" as="image" />
-    <link rel="preload" href="tokenomics.png" as="image" />
-    <meta property="og:title" content="Nibbles, the red panda" />
-    <meta property="og:description" content="" />
-    <meta
-      property="og:image"
-      content="https://nibbles.theredpanda.io/social-preview.jpg"
-    />
+
+    <!-- Meta tags -->
+    <meta property="og:title" content="Probably Nothing" />
+    <meta property="og:description" content="This is probably nothing" />
+    <meta property="og:image" content="social-preview.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
   </head>
 
@@ -55,7 +43,6 @@
       <a href="#" title="Dexscreener" target="_blank" rel="noopener">
         <img src="dexscreener.png" alt="Dexscreener" class="social-icon" />
       </a>
-
       <a href="#" target="_blank" rel="noopener" title="Twitter"
         ><i class="fab fa-twitter"></i
       ></a>
@@ -73,23 +60,15 @@
         <a href="#">Probably Nothing</a>
       </div>
       <style>
-        /* Remove default link styles */
         .logo a {
           text-decoration: none;
-          /* Removes underline */
           color: white;
-          /* Changes text color to white (or any preferred color) */
         }
       </style>
       <div class="nav-links">
-        <!--<a href="/website.html" target="_blank">Nibbles AI <br> (Coming soon)</a>-->
-        <!-- <a href="#roadmap">Roadmap</a> -->
-        <!-- <a href="#tokenomics">Tokenomics</a> -->
         <a href="https://t.me/NOTHINGonXRP" target="_blank" rel="noopener"
           >Community</a
         >
-        <!-- <a href="#join">Join Us</a> -->
-        <!-- <a href="#about">About Us</a> -->
       </div>
     </nav>
 
@@ -139,21 +118,18 @@
           <p>
             Glad I caught you. Well, this is probably nothing. You have no
             reason to buy. We don't have a Telegram chat—keeps the FUDders and
-            jeeters away.<br />
-            <br />
+            jeeters away.<br /><br />
             $NOTHING was launched as a test for degens who just can't stop
-            aping. <br />
-            <br />
+            aping.<br /><br />
             All dev funds will be burned, plus liquidity added at 100K. You have
-            no reason to trust me—because this is probably nothing.<br />
-            <br />
+            no reason to trust me—because this is probably nothing.<br /><br />
             Welcome to the Nothing Club.
           </p>
         </div>
         <div class="image">
           <img
             src="nothing 1.jpg"
-            alt="Red Panda Mascot"
+            alt="Nothing"
             loading="lazy"
             width="300"
             height="300"
@@ -210,7 +186,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="first-ledger.png" alt="Solscan" />
+            <img src="first-ledger.png" alt="First Ledger" />
             <span>First Ledger</span>
           </a>
         </div>
@@ -230,27 +206,16 @@
     <script src="script.js"></script>
     <script>
       function copyAddress() {
-        // The contract address to copy
         const address = "00000000000000000000";
-
-        // Create a temporary textarea element
         const textarea = document.createElement("textarea");
         textarea.value = address;
         document.body.appendChild(textarea);
-
-        // Select and copy the text
         textarea.select();
         document.execCommand("copy");
-
-        // Remove the temporary textarea
         document.body.removeChild(textarea);
-
-        // Optional: Show feedback to user
         const button = document.querySelector(".copy-button");
         const originalText = button.textContent;
         button.textContent = "Copied!";
-
-        // Reset button text after 2 seconds
         setTimeout(() => {
           button.textContent = originalText;
         }, 2000);
